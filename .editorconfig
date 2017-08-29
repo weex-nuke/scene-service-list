@@ -1,0 +1,20 @@
+# editorconfig.org
+
+#root 表明是最顶层的配置文件，发现设为true时，才会停止查找.editorconfig文件
+root = true
+
+# [*]对所有文件生效，配置文件格式
+# charset：文件编码。可选值
+# end_of_line：换行符格式。说明见Wiki：换行。可选值
+# indent_style: 缩进类型。可选值
+# indent_size: 缩进数量。可选值
+# trim_trailing_whitespace：是否删除行尾的空格。可选值
+# insert_final_newline：是否在文件的最后插入一个空行。可选值
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
