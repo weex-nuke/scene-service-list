@@ -1,73 +1,61 @@
 {
-    "name": "scene-service-list",
-    "description": "scene-service-list",
-    "version": "0.0.11",
-    "keywords": [
-        "nuke",
-        "nuke-theme",
-        "service-list",
-        "长列表",
-        "列表优化"
+  "name": "scene-service-list",
+  "description": "scene-service-list",
+  "version": "0.0.11",
+  "keywords": ["nuke", "nuke-theme", "service-list", "长列表", "列表优化"],
+  "scripts": {
+    "start":
+      "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
+    "lint": "./node_modules/eslint/bin/eslint.js --fix ./ --ext .jsx --ext .js"
+  },
+  "author": {
+    "name": "云易",
+    "email": "yunyi.zy@alibaba-inc.com"
+  },
+  "readmeFilename": "README.md",
+  "tnpm": {
+    "mode": "npminstall"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "nuke": "^0.7.8",
+    "qs": "^6.4.0",
+    "rax": "^0.4.x",
+    "component-emitter": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:nuke-theme/service-list.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "*",
+    "eslint": "3.19.0",
+    "eslint-config-ali": "2.0.0",
+    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.1.0"
+  },
+  "themeOption": {
+    "screenshot": [
+      "https://gw.alicdn.com/tfs/TB1gmjzXEgQMeJjy0FfXXbddXXa-720-1280.jpg"
     ],
-    "scripts": {
-        "start": "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
-        "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
-        "lint": "./node_modules/eslint/bin/eslint.js --fix ./ --ext .jsx --ext .js"
+    "pageName": "scene-service-list",
+    "baseNuke": "both",
+    "id": 6
+  },
+  "compatibility": {
+    "qn": {
+      "ios": "true",
+      "android": "true"
     },
-    "author": {
-        "name": "云易",
-        "email": "yunyi.zy@alibaba-inc.com"
+    "tb": {
+      "ios": "true",
+      "android": "true"
     },
-    "readmeFilename": "README.md",
-    "tnpm": {
-        "mode": "npminstall"
-    },
-    "dependencies": {
-        "babel-eslint": "^7.2.3",
-        "nuke": "0.7.8",
-        "qs": "^6.4.0",
-        "rax": "^0.4.x",
-        "component-emitter": "^1.2.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@gitlab.alibaba-inc.com:nuke-theme/service-list.git"
-    },
-    "devDependencies": {
-        "less": "^2.7.2",
-        "less-loader": "^3.0.0",
-        "rax-webpack-plugin": "^0.0.18",
-        "rx-css-loader": "~0.1.2",
-        "stylesheet-loader": "^0.2.4",
-        "webpack": "~1.13.3",
-        "webpack-livereload-plugin": "^0.9.0",
-        "babel-eslint": "*",
-        "eslint": "3.19.0",
-        "eslint-config-ali": "2.0.0",
-        "eslint-plugin-import": "2.6.0",
-        "eslint-plugin-jsx-a11y": "6.0.2",
-        "eslint-plugin-react": "7.1.0"
-    },
-    "themeOption": {
-        "screenshot": [
-            "https://gw.alicdn.com/tfs/TB1gmjzXEgQMeJjy0FfXXbddXXa-720-1280.jpg"
-        ],
-        "pageName": "scene-service-list",
-        "baseNuke": "both",
-        "id": 6
-    },
-    "compatibility": {
-        "qn": {
-            "ios": "true",
-            "android": "true"
-        },
-        "tb": {
-            "ios": "true",
-            "android": "true"
-        },
-        "tm": {
-            "ios": "true",
-            "android": "true"
-        }
+    "tm": {
+      "ios": "true",
+      "android": "true"
     }
+  }
 }

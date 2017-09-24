@@ -1,6 +1,7 @@
 import fetch from './request/fetch';
 
-export const Http = {
+const Http = {
   fetch,
 };
 
+export default Http;

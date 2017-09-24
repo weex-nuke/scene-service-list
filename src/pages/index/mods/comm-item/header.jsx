@@ -24,7 +24,7 @@ class Header extends PureComponent {
         <View style={styles['comm-grid']}>
           <View style={styles['comm-col']}>
             <Text style={styles['header-status']}>{this.props.statueText}</Text>
-            <Icon style={styles['header-icon']} name={'display'}/>
+            <Icon style={styles['header-icon']} name={'display'} />
             <Text style={styles['header-nickName']}>{this.props.nickName}</Text>
           </View>
           <Text style={styles['header-index']}>#{this.props.index + 1}</Text>

@@ -248,7 +248,7 @@ const App = class ServiceListIndex extends Component {
     return (
       <Touchable style={styles['tool-btn']} ref="overlay">
         <View style={[styles['tool-btn-item'], styles['tool-btn-one']]}>
-          <Checkbox size="small" checked={this.state.hasSelectAll} onChange={this.chooseAll}/>
+          <Checkbox size="small" checked={this.state.hasSelectAll} onChange={this.chooseAll} />
           <Text style={styles['tool-btn-one-text']}>全选</Text>
         </View>
         <Text style={[styles['tool-btn-item'], styles['tool-btn-two']]}>批量备注</Text>

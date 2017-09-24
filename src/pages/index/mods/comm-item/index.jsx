@@ -45,7 +45,7 @@ class CommItem extends Component {
     return (
       <View>
         <View style={[styles['comm-grid'], styles['item-header-contaiter']]}>
-          {showCheck && <Checkbox checked={this.props.checked} onChange={this.checkChange} size="small"/>}
+          {showCheck && <Checkbox checked={this.props.checked} onChange={this.checkChange} size="small" />}
           <Header {...header} />
         </View>
 
